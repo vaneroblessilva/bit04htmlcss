@@ -1,0 +1,198 @@
+/* PRIMERO TELÉFONOS */
+* {
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: #F5EFE6;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header,
+nav,
+main,
+aside{
+  background-color: white;
+  color: black;
+  border: 20px solid #F5EFE6;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+aside{
+  background-color: white;
+  color: black;
+  border: 20px solid #F5EFE6;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+footer{
+  background-color: white;
+  color: black;
+  border: 20px solid #F5EFE6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+  text-align: center;
+}
+.img{
+    width: 160px;
+    height: 160px;
+}
+.iconsec{
+  width: 200px;
+  justify-items: center;
+}
+.h1{
+    color: #006E7F;
+    font-family: 'Montserrat', sans-serif;
+}
+.p1{
+  color: #406882;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+.menu-check {
+  display: none;
+}
+.menu-check:checked + .links {
+  transform: translateX(0);
+}
+
+.derecho{
+  display: flex;
+  align-content: flex-end
+}
+
+/*Barra de navegación*/
+.container .menu-btn, .logo{
+  float: left;
+  line-height: 70px;
+}
+
+.links {
+  transform: translateX(-600%);
+  transition: transform 1s;
+  background-color: white;
+  color: #006E7F;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.links a {
+  color: #006E7F;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #B1D0E0;
+}
+
+.contenido{
+  font-family: 'Quicksand', sans-serif;
+  color: #6998AB;
+  padding: 10px;
+  text-align:justify;
+}
+.links2{
+  color: #006E7F;
+  text-decoration: none;
+}
+.links2 a:hover {
+  color: #B1D0E0;
+}
+.icono
+{
+    width: 50px;
+}
+main{
+  flex-direction: column;
+}
+.video
+{
+  display: flex;
+  align-items: center;
+}
+.csup{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.cinf{
+  display: flex;
+  align-items: flex-end;
+}
+.derecho{
+  display: flex;
+  align-items: flex-end;
+}
+
+.main2{
+  flex-basis: 100%;
+}
+.imgbio{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+/*Tabletas*/
+@media screen and (min-width: 768px) {
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    background-color: white;
+  }
+}
+
+/* AHORA COMPUTADORES */
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    background-color: white;
+  }
+  main {
+    flex-basis: 75%;
+  }
+  aside {
+    flex-basis: 25%;
+  }
+}
+
+.disco{
+  display: flex;
+  align-items: stretch;
+}
+
+.icondis{
+  width: 250px;
+  justify-items: right;
+}
